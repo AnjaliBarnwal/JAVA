@@ -1,0 +1,11 @@
+3. Write a Java Program to calculate factorial value of a declared variable.
+public class program3 {
+    public static void main(String[] args){
+        int n=5;
+        int factorial=1;
+        for(int i=1;i<=n;i++){
+            factorial*=i;
+        }
+    System.out.println("Fctorial of " + n + " is: " + factorial);
+    }
+}
