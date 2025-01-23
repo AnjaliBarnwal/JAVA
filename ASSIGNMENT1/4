@@ -1,0 +1,18 @@
+4. Write a Java Program to calculate factorial value of a declared variable by creating separate
+method for factorial segment.
+public class program4 {
+    public static int calculateFactorial(int number) {
+        int factorial = 1;
+        for (int i = 1; i <= number; i++) {
+            factorial *= i; 
+        }
+        return factorial;
+    }
+
+    public static void main(String[] args) {
+        int num = 5;
+        int result = calculateFactorial(num);
+        System.out.println("The factorial of " + num + " is: " + result);
+    }
+}
+
