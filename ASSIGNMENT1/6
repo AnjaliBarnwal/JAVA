@@ -1,0 +1,15 @@
+6. Write a Java Program to calculate factorial value of a variable by taking input from command line.
+public class FactorialCommandLine {
+public static void main(String[] args) {
+if (args.length > 0) {
+int num = Integer.parseInt(args[0]);
+int factorial = 1;
+for (int i = 1; i <= num; i++) {
+factorial *= i;
+}
+System.out.println("Factorial of " + num + " is: " + factorial);
+} else {
+System.out.println("Please provide a number as a command line argument.");
+}
+}
+}
