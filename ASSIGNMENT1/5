@@ -1,5 +1,19 @@
 Write a Java Program to calculate factorial value of a declared variable by creating separate class
 and method for factorial segment.
-public class program5 {
-    
+class FactorialCalculator {
+public int factorial(int num) {
+int factorial = 1;
+for (int i = 1; i <= num; i++) {
+factorial *= i;
+}
+return factorial;
+}
+}
+public class FactorialClass {
+public static void main(String[] args) {
+int num = 5;
+FactorialCalculator calc = new FactorialCalculator();
+int result = calc.factorial(num);
+System.out.println("Factorial of " + num + " is: " + result);
+}
 }
